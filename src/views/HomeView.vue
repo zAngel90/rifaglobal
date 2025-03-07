@@ -1,14 +1,14 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
-import { API_URL, getImageUrl } from '../config'
+import { API_URL, api } from '../config'
+import { getImageUrl } from '../config'
 
 const rifasDisponibles = ref([])
 
 // Cargar rifas desde el backend
 const cargarRifas = async () => {
   try {
-    const response = await axios.get(`${API_URL}/rifas`)
+    const response = await api.get('/rifas')
     rifasDisponibles.value = response.data
   } catch (error) {
     console.error('Error al cargar las rifas:', error)
