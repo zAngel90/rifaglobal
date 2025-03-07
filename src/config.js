@@ -1,4 +1,4 @@
-export const API_URL = 'https://93.127.203.121';
+export const API_URL = 'https://93.127.203.121:3000';
 
 // URLs para imágenes
 export const getImageUrl = (path) => {
