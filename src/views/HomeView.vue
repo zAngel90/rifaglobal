@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { API_URL, api } from '../config'
+import api from '../axiosConfig'
 import { getImageUrl } from '../config'
 
 const rifasDisponibles = ref([])
